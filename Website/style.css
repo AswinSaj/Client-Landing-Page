@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PP mori";
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  background-color: #0f0d0d;
+}
+.page1 {
+  min-height: 100vh;
+  width: 100vw;
+}
+.contact {
+  display: none;
+}
+#nav {
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  background-color: white;
+  opacity: 80%;
+}
+img {
+  object-fit: contain;
+  height: 45px;
+}
+#nav2 {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+#nav2 h4 {
+  color: #0f0d0d;
+  font-size: 17px;
+  cursor: pointer;
+}
+#nav2 h4:hover {
+  border-bottom: 1.5px solid black;
+}
+/* #nav2 h4 {
+  border-bottom: 1.5px solid #fff;
+} */
+.page1 h1 {
+  font-size: 8vw;
+  font-family: "PP mori";
+  font-weight: 300;
+  margin-top: 10vw;
+  margin-left: 12vw;
+}
+.page1 h2 {
+  font-size: 8vw;
+  font-family: "PP mori";
+  font-weight: 300;
+  margin-left: 40vw;
+}
+.page1 video {
+  margin-top: 10vh;
+  width: 65%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 15px;
+}
+/* -------------------------------------------- */
+.page2 {
+  min-height: 134vh;
+  width: 100%;
+
+  padding: 4vw 2.5vw 0 2.5vw;
+  /* background-image: url(../images/elegant-modern-minimal-abstract-wavy-lines-free-vector.jpg);
+  background-repeat: no-repeat; */
+}
+.page2 h1 {
+  font-size: 6vw;
+  font-weight: 300;
+  color: black;
+  padding: 1vh 2vw;
+}
+.page2-container {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 2vw 0 2vw;
+}
+.page2-left {
+  width: 35%;
+}
+.page2-left h2 {
+  font-size: 4vw;
+  font-weight: 500;
+  color: black;
+  width: 90%;
+  font-weight: 300;
+}
+.page2-right {
+  width: 40%;
+}
+.page2-right p {
+  font-size: 2vw;
+  color: black;
+  width: 100%;
+  /* padding-top: 1vw; */
+  margin-bottom: 10vw;
+}
+.pageright-bottom {
+  display: flex;
+
+  align-items: center;
+  margin-top: -12%;
+  justify-content: end;
+  transform-origin: 0 -50%;
+  position: relative;
+  z-index: 999;
+}
+.div1 {
+  margin-right: 4px;
+}
+.pageright-bottom img {
+  height: 20vw;
+  border-radius: 5px;
+}
+.pageright-bottom img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .page1 {
+    .background-video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: fixed;
+      left: 50%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+@media only screen and (max-width: 780px) {
+  #nav {
+    opacity: 100%;
+  }
+  img {
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    height: 40px;
+  }
+  #nav2 h4 {
+    display: none;
+  }
+}
