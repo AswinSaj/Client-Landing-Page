@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "PP mori";
+  font-family: "Poppins", sans-serif;
   color: white;
 }
 
@@ -17,6 +17,9 @@ body {
 .page1 {
   min-height: 100vh;
   width: 100vw;
+  background-image: url(../images/black_and_white_stripes_4k_hd_abstract-3840x2160.jpg);
+  background-repeat: no-repeat;
+  background-size: 140%;
 }
 .contact {
   display: none;
@@ -74,19 +77,48 @@ img {
 }
 /* -------------------------------------------- */
 .page2 {
-  min-height: 134vh;
+  min-height: 100vh;
   width: 100%;
 
-  padding: 4vw 2.5vw 0 2.5vw;
+  padding: 1.5vw 2.5vw 0 2.5vw;
+  border-bottom: 2px solid #0f0d0d;
   /* background-image: url(../images/elegant-modern-minimal-abstract-wavy-lines-free-vector.jpg);
   background-repeat: no-repeat; */
 }
 .page2 h1 {
-  font-size: 6vw;
-  font-weight: 300;
+  font-size: 5vw;
+  font-weight: 400;
   color: black;
-  padding: 1vh 2vw;
+  padding: 0 1vw 1vw 8.5vw;
 }
+.grad {
+  font-weight: 600;
+  animation: moveGradient 10s ease-in-out infinite;
+  background: linear-gradient(
+    135deg,
+    #e32d23,
+    #feda0f9f,
+    #00a2ffb9,
+    #09f1b7b5,
+    #ff00d2,
+    #feda0fc1,
+    #00a2ffbb,
+    #09f1b7a5
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
 .page2-container {
   height: 60vh;
   width: 100%;
@@ -96,14 +128,17 @@ img {
   padding: 0 2vw 0 2vw;
 }
 .page2-left {
-  width: 35%;
+  width: 43%;
+  padding: 1vw 1vw;
+  border-style: double;
+  border-color: #0f0d0d;
 }
 .page2-left h2 {
   font-size: 4vw;
-  font-weight: 500;
+  font-weight: 600;
   color: black;
   width: 90%;
-  font-weight: 300;
+  line-height: 84px;
 }
 .page2-right {
   width: 40%;
@@ -112,14 +147,15 @@ img {
   font-size: 2vw;
   color: black;
   width: 100%;
-  /* padding-top: 1vw; */
+  padding-bottom: 4vw;
   margin-bottom: 10vw;
+  font-weight: 300;
+  line-height: 35px;
 }
 .pageright-bottom {
   display: flex;
-
   align-items: center;
-  margin-top: -12%;
+  margin-top: -16%;
   justify-content: end;
   transform-origin: 0 -50%;
   position: relative;
@@ -129,14 +165,25 @@ img {
   margin-right: 4px;
 }
 .pageright-bottom img {
-  height: 20vw;
+  height: 19vw;
   border-radius: 5px;
 }
 .pageright-bottom img:hover {
   transform: scale(1.1);
   transition: 0.5s;
+  opacity: 90%;
 }
 
+.page3 {
+  min-height: 110vh;
+  width: 100%;
+}
+.page3 h1 {
+  color: #0f0d0d;
+}
+.media1 img {
+  height: 5vw;
+}
 @media only screen and (max-width: 600px) {
   .page1 {
     .background-video {
